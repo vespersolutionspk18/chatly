@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include chatly *.css
+recursive-include chatly *.csv
+recursive-include chatly *.html
+recursive-include chatly *.ico
+recursive-include chatly *.js
+recursive-include chatly *.json
+recursive-include chatly *.md
+recursive-include chatly *.png
+recursive-include chatly *.py
+recursive-include chatly *.svg
+recursive-include chatly *.txt
+recursive-exclude chatly *.pyc

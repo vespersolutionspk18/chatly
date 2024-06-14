@@ -1,0 +1,20 @@
+meta {
+  name: Get Preview Link
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{url}}:{{port}}/api/method/chatly.api.preview_links.get_preview_link?urls=["https://chatlyapp.info"]
+  body: none
+  auth: none
+}
+
+query {
+  urls: ["https://chatlyapp.info"]
+  ~urls: ["http://192.168.0.0"]
+}
+
+headers {
+  Authorization: token {{api_key}}:{{api_secret}}
+}

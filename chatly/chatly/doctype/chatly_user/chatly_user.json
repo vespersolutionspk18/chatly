@@ -1,0 +1,163 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-06 14:36:48.631681",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "user",
+  "bot",
+  "enabled",
+  "column_break_dwio",
+  "full_name",
+  "first_name",
+  "user_image",
+  "html_xuuw",
+  "pinned_channels_section",
+  "pinned_channels",
+  "availability_status",
+  "custom_status"
+ ],
+ "fields": [
+  {
+   "depends_on": "eval: doc.type == 'User'",
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "mandatory_depends_on": "eval: doc.type == 'User'",
+   "options": "User",
+   "unique": 1
+  },
+  {
+   "fetch_from": "user.full_name",
+   "fetch_if_empty": 1,
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Full Name",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "user.first_name",
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fetch_from": ".",
+   "fieldname": "user_image",
+   "fieldtype": "Attach Image",
+   "label": "User Image"
+  },
+  {
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled",
+   "read_only": 1
+  },
+  {
+   "fieldname": "html_xuuw",
+   "fieldtype": "HTML",
+   "options": "<p>To disable the user from accessing Chatly, go to \"Users\" and remove the \"Chatly User\" role.</p>"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Type",
+   "options": "User\nBot",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval: doc.type == 'Bot'",
+   "fieldname": "bot",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Bot",
+   "mandatory_depends_on": "eval: doc.type == 'Bot'",
+   "options": "Chatly Bot",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_dwio",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pinned_channels_section",
+   "fieldtype": "Section Break",
+   "label": "Pinned Channels"
+  },
+  {
+   "fieldname": "pinned_channels",
+   "fieldtype": "Table",
+   "options": "Chatly Pinned Channels"
+  },
+  {
+   "fieldname": "availability_status",
+   "fieldtype": "Select",
+   "label": "Availability Status",
+   "options": "\nAvailable\nAway\nDo not disturb\nInvisible"
+  },
+  {
+   "fieldname": "custom_status",
+   "fieldtype": "Data",
+   "label": "Custom Status"
+  }
+ ],
+ "image_field": "user_image",
+ "links": [],
+ "modified": "2024-05-24 15:23:40.547992",
+ "modified_by": "Administrator",
+ "module": "Chatly",
+ "name": "Chatly User",
+ "naming_rule": "By script",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Chatly User",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Chatly User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "full_name"
+}

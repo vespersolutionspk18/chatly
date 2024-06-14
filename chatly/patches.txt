@@ -1,0 +1,8 @@
+[pre_model_sync]
+
+[post_model_sync]
+chatly.patches.v1_2.create_chatly_users
+chatly.patches.v1_3.create_chatly_message_indexes #23
+chatly.patches.v1_3.update_all_messages_to_include_message_content #2
+chatly.patches.v1_3.update_all_messages_to_include_replied_message_content #2
+chatly.patches.v1_6.create_chatly_channel_member_index

@@ -1,0 +1,97 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"MKitHAnT4f\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><a href=\\\"/chatly\\\">Chatly</a></span>\",\"col\":12}},{\"id\":\"gBy2HFBNf4\",\"type\":\"onboarding\",\"data\":{\"onboarding_name\":\"Chatly\",\"col\":12}},{\"id\":\"ZcawYU5brv\",\"type\":\"card\",\"data\":{\"card_name\":\"DocTypes\",\"col\":4}}]",
+ "creation": "2023-06-22 20:12:29.687295",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "message-1",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Chatly",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "DocTypes",
+   "link_count": 6,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Chatly Settings",
+   "link_count": 0,
+   "link_to": "Chatly Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Chatly Users",
+   "link_count": 0,
+   "link_to": "Chatly User",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Channels",
+   "link_count": 0,
+   "link_to": "Chatly Channel",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Members",
+   "link_count": 0,
+   "link_to": "Chatly Channel Member",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Messages",
+   "link_count": 0,
+   "link_to": "Chatly Message",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Message Reactions",
+   "link_count": 0,
+   "link_to": "Chatly Message Reaction",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-06-13 20:18:44.203529",
+ "modified_by": "Administrator",
+ "module": "Chatly",
+ "name": "Chatly",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 30.0,
+ "shortcuts": [],
+ "title": "Chatly"
+}
